@@ -5,7 +5,7 @@
 ## Overview
 This specific script is for usage in `solidity` files but you can change it for any files.
 
-> NOTE: Soidity Support comes in ^0.6.8
+> NOTE: Solidity Support comes in ^0.6.8
 
 ## Example 
 
