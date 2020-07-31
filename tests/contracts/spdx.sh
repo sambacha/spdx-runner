@@ -15,9 +15,7 @@ echo -ne '#######################   (100%)\r'
 echo -ne '\n'
 
 git grep -Ln SPDX-License-Identifier * > no-spdx.txt \
-    ':^.git*' ':^.ci/*' ':^.codeclimate.yml' \
-    ':^README' ':^MAINTAINERS' ':^VERSION' \
-    ':^*/packages' ':^*/README' \
+    ':^.git*' \
     ':^build/' ':^contracts/' ':^test' ':^migrations/' \
     ':^*.sol' ':^*.d.ts' ':^*.js' ':^*.data' ':^*.cfg' ':^*.txt'
 
