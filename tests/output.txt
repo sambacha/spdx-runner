@@ -1,0 +1,3 @@
+no-spdx.txt
+output.txt
+truffle-config.js
