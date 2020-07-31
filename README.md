@@ -2,6 +2,10 @@
 
 > git grep for license identifiers 
 
+## TL;DL
+
+`grep --line-buffered -L SPDX-License-Identifier *.sol  | tee spdx-audit.txt`
+
 ## Overview
 This specific script is for usage in `solidity` files but you can change it for any files.
 
