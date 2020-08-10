@@ -111,24 +111,14 @@
   "ast": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/MetaCoin.sol",
     "exportedSymbols": {
-      "MetaCoin": [
-        112
-      ]
+      "MetaCoin": [112]
     },
     "id": 113,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 18,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:1"
       },
@@ -150,9 +140,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 112,
-        "linearizedBaseContracts": [
-          112
-        ],
+        "linearizedBaseContracts": [112],
         "name": "MetaCoin",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1309,24 +1297,14 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/MetaCoin.sol",
     "exportedSymbols": {
-      "MetaCoin": [
-        112
-      ]
+      "MetaCoin": [112]
     },
     "id": 113,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 18,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:1"
       },
@@ -1348,9 +1326,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 112,
-        "linearizedBaseContracts": [
-          112
-        ],
+        "linearizedBaseContracts": [112],
         "name": "MetaCoin",
         "nodeType": "ContractDefinition",
         "nodes": [

@@ -1,32 +1,32 @@
 {
-	"name": "scripts-tooling",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "jest "
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/sambacha/scripts.git"
-	},
-	"keywords": [
-		"scripts",
-		"bash",
-		"automation",
-		"toolchain"
-	],
-	"author": "sam bacha",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/sambacha/scripts/issues"
-	},
-	"homepage": "https://github.com/sambacha/scripts#readme",
-	"devDependencies": {
-		"jest": "^26.2.2"
-	},
-	"dependencies": {
-		"@trufflesuite/chromafi": "^2.1.2",
-		"eslint": "^7.6.0"
-	}
+  "name": "scripts-tooling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambacha/scripts.git"
+  },
+  "keywords": [
+    "scripts",
+    "bash",
+    "automation",
+    "toolchain"
+  ],
+  "author": "sam bacha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sambacha/scripts/issues"
+  },
+  "homepage": "https://github.com/sambacha/scripts#readme",
+  "devDependencies": {
+    "jest": "^26.2.2"
+  },
+  "dependencies": {
+    "@trufflesuite/chromafi": "^2.1.2",
+    "eslint": "^7.6.0"
+  }
 }
