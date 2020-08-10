@@ -1,0 +1,9 @@
+{
+    "editor.someSetting": true,
+    "markdownlint.ignore": [
+        "ignore.md",
+        "node_modules/*.md",
+        "**/ignore.md",
+        "**/*.md"
+    ]
+}
