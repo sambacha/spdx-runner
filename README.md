@@ -35,6 +35,32 @@ This script will search through the file extenstions you specify, and it will ap
 
 > Note: Try and keep files to search for consistent with their respective commenting nomenclature
 
+> git grep for license identifiers
+
+## SPDX Solidity Audit
+
+`grep --line-buffered -L SPDX-License-Identifier *.sol | tee spdx-audit.txt`
+
+### Solidity Overview
+
+This specific script is for usage in `solidity` files but you can change it for any files.
+
+> NOTE: Solidity Support comes in ^0.6.8
+
+### Example
+
+// SPDX-License-Identifier: MIT
+
+## `spdx-sol.sh`
+
+- searches for 'codeclimate.yml' - this is for disallowed licenses
+
+- can delete this or replace with something else
+
+- you can change the files to search for on line 22
+- you can change the dir's to search for on line 21
+- if you want to output to terminal without saving to file, remove -n and the \* > output.txt
+
 ### License Header Examples
 
 #### MDX/JSX
