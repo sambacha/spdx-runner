@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/sambacha/scripts#readme",
   "devDependencies": {
+    "eslint": "^7.6.0",
     "jest": "^26.2.2"
   },
   "dependencies": {
-    "@trufflesuite/chromafi": "^2.1.2",
-    "eslint": "^7.6.0"
+    "@trufflesuite/chromafi": "^2.1.2"
   }
 }
