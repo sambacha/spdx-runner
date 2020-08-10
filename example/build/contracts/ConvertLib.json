@@ -38,24 +38,14 @@
   "ast": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/ConvertLib.sol",
     "exportedSymbols": {
-      "ConvertLib": [
-        16
-      ]
+      "ConvertLib": [16]
     },
     "id": 17,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:0"
       },
@@ -66,9 +56,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 16,
-        "linearizedBaseContracts": [
-          16
-        ],
+        "linearizedBaseContracts": [16],
         "name": "ConvertLib",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -246,24 +234,14 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/ConvertLib.sol",
     "exportedSymbols": {
-      "ConvertLib": [
-        16
-      ]
+      "ConvertLib": [16]
     },
     "id": 17,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:0"
       },
@@ -274,9 +252,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 16,
-        "linearizedBaseContracts": [
-          16
-        ],
+        "linearizedBaseContracts": [16],
         "name": "ConvertLib",
         "nodeType": "ContractDefinition",
         "nodes": [

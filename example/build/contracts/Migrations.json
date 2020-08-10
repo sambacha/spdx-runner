@@ -78,24 +78,14 @@
   "ast": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        169
-      ]
+      "Migrations": [169]
     },
     "id": 170,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 114,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:2"
       },
@@ -106,9 +96,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 169,
-        "linearizedBaseContracts": [
-          169
-        ],
+        "linearizedBaseContracts": [169],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -486,9 +474,7 @@
               "src": "406:109:2",
               "statements": [
                 {
-                  "assignments": [
-                    156
-                  ],
+                  "assignments": [156],
                   "declarations": [
                     {
                       "constant": false,
@@ -727,24 +713,14 @@
   "legacyAST": {
     "absolutePath": "/Users/sbacha/github/spdx/tests/contracts/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [
-        169
-      ]
+      "Migrations": [169]
     },
     "id": 170,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 114,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.4",
-          ".22",
-          "<",
-          "0.7",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.7", ".0"],
         "nodeType": "PragmaDirective",
         "src": "0:32:2"
       },
@@ -755,9 +731,7 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 169,
-        "linearizedBaseContracts": [
-          169
-        ],
+        "linearizedBaseContracts": [169],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1135,9 +1109,7 @@
               "src": "406:109:2",
               "statements": [
                 {
-                  "assignments": [
-                    156
-                  ],
+                  "assignments": [156],
                   "declarations": [
                     {
                       "constant": false,
