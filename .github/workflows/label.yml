@@ -9,19 +9,18 @@ name: Labeler
 on: [pull_request]
 
 jobs:
-  label:
+    label:
+        runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/labeler@v2
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        steps:
+            - uses: actions/labeler@v2
+        with:
+            repo-token: "${{ secrets.GITHUB_TOKEN }}"
 # Add 'repo' label to any root file changes
 repo:
-  - ./*
-  
+    - ./*
+
 # Add '@spdxsol/shell' label to any change within the 'root dir or package
 gitmennt/shell:
-  - ./**/*.sh
+    - ./**/*.sh
 #  - package/core/**/*

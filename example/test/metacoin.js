@@ -64,7 +64,9 @@ contract("MetaCoin", function (accounts) {
             })
             .then(function (balance) {
                 account_two_starting_balance = parseInt(balance);
-                return meta.sendCoin(account_two, amount, { from: account_one });
+                return meta.sendCoin(account_two, amount, {
+                    from: account_one,
+                });
             })
             .then(function () {
                 return meta.getBalance.call(account_one);

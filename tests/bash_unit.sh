@@ -93,7 +93,7 @@ _assert_expression() {
     eval "($assertion)" >"$stdout" 2>"$stderr" && status=$? || status=$?
     if ! eval "$condition"
     then
-      fail "$(eval echo $message)" "$stdout" "$stderr"
+    fail "$(eval echo $message)" "$stdout" "$stderr"
     fi
   ) || exit $?
 }
@@ -156,11 +156,11 @@ run_test_suite() {
   for test in $(set | "$GREP"  -E '^test.* \(\)' | "$GREP" -E "$test_pattern" | "$SED" -e 's: .*::')
   do
     (
-      local status=0
-      declare -F | "$GREP" ' setup$' >/dev/null && setup
-      (__bash_unit_current_test__="$test" run_test) || status=$?
-      declare -F | "$GREP" ' teardown$' >/dev/null && teardown
-      exit $status
+    local status=0
+    declare -F | "$GREP" ' setup$' >/dev/null && setup
+    (__bash_unit_current_test__="$test" run_test) || status=$?
+    declare -F | "$GREP" ' teardown$' >/dev/null && teardown
+    exit $status
     )
     failure=$(( $? || failure))
   done
@@ -214,9 +214,9 @@ pretty_format() {
     $CAT
     if $term_utf8
     then
-      echo -en " $pretty_symbol "
+    echo -en " $pretty_symbol "
     else
-      [[ ! -z "$alt_symbol" ]] && echo -en " $alt_symbol "
+    [[ ! -z "$alt_symbol" ]] && echo -en " $alt_symbol "
     fi
   ) | color "$color"
 }
@@ -323,19 +323,19 @@ while getopts "vp:f:" option
 do
   case "$option" in
     p)
-      test_pattern="${test_pattern}${separator}${OPTARG}"
-      separator="|"
-      ;;
+    test_pattern="${test_pattern}${separator}${OPTARG}"
+    separator="|"
+    ;;
     f)
-      output_format="${OPTARG}"
-      ;;
+    output_format="${OPTARG}"
+    ;;
     v)
-      echo "bash_unit $VERSION"
-      exit
-      ;;
+    echo "bash_unit $VERSION"
+    exit
+    ;;
     ?|:)
-      usage
-      ;;
+    usage
+    ;;
   esac
 done
 shift $((OPTIND-1))
@@ -365,13 +365,13 @@ do
   notify_suite_starting "$test_file"
   (
     set -e # Ensure bash_unit with exit with failure
-           # in case of syntax error.
+            # in case of syntax error.
     if [[ "${STICK_TO_CWD}" != true ]]
     then
-      cd "$(dirname "$test_file")"
-      source "$(basename "$test_file")"
+    cd "$(dirname "$test_file")"
+    source "$(basename "$test_file")"
     else
-      source "$test_file"
+    source "$test_file"
     fi
     set +e
     run_test_suite

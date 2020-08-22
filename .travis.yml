@@ -1,0 +1,10 @@
+
+matrix:
+  include:
+    - language: nodejs
+       before_script:
+        - npm install -g eclint
+        - eclint fix *
+
+    - language: bash
+      script: make
