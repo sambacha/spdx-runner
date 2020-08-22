@@ -49,7 +49,7 @@ This specific script is for usage in `solidity` files but you can change it for 
 
 ### Example
 
-// SPDX-License-Identifier: MIT
+`// SPDX-License-Identifier: ISC`
 
 ## `spdx-sol.sh`
 
@@ -64,31 +64,31 @@ This specific script is for usage in `solidity` files but you can change it for 
 ### License Header Examples
 
 #### MDX/JSX
-
+```
 /_SPDX-License-Identifier: Apache-2.0
 SPDXVersion: SPDX-2.2
 SPDX-FileCopyrightText: Copyright 2020 <Licensor>_/
-
+```
 #### REGULAR
-
+```
 // SPDX-License-Identifier: Apache-2.0
 // SPDXVersion: SPDX-2.2
 // SPDX-FileCopyrightText: Copyright 2020 <Licensor>
-
+```
 #### BASH/YAML/ENV
-
+```
 # SPDX-License-Identifier: Apache-2.0
 
 # SPDXVersion: SPDX-2.2
 
 # SPDX-FileCopyrightText: Copyright 2020 <Licensor>
-
+```
 #### MARKUP SYNTAX (HTML/MARKDOWN, ETC)
-
+```html
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 <!-- SPDXVersion: SPDX-2.2  -->
 <!-- SPDX-FileCopyrightText: Copyright 2020 <Licensor>  -->
-
+```
 ## License
 
 MIT License
