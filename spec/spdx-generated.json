@@ -1,0 +1,25 @@
+{
+  "Document": {
+    "revieweds": [],
+    "hasExtractedLicensingInfos": [],
+    "name": "ABCDEFGHIJKLMNOPQRST",
+    "comment": "ABCDEFGHIJKLM",
+    "spdxVersion": "ABCDEFGHIJKLMNOPQ",
+    "annotations": [],
+    "describesPackages": [],
+    "dataLicense": "ABCDEFGHIJKLMNOPQRST",
+    "externalDocumentRefs": [],
+    "creationInfo": {
+      "comment": "ABCDEFGHIJK",
+      "created": "ABCDEFGHIJKLMNOPQ",
+      "creators": [
+        "ABCDEFGHIJKLMNOPQR"
+      ],
+      "licenseListVersion": "ABCDEFGHIJKLMNO"
+    },
+    "packages": [],
+    "files": [],
+    "snippets": [],
+    "relationships": []
+  }
+}
