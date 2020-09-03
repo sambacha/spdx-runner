@@ -1,0 +1,82 @@
+---
+version: 2.1
+executors:
+  node_executor:
+    docker:
+      - image: circleci/node:12.9.0-stretch
+  shell_executor:
+    docker:
+      - image: circleci/buildpack-deps:buster-scm
+  ruby_executor:
+    docker:
+      - image: circleci/ruby:2-stretch
+
+  linkchecker:
+    executor: node_executor
+    steps:
+      - checkout
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          keys:
+            - deps-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: |
+            npm install
+      - run:
+          name: Run markdown link checker
+          command: |
+            npm run test:links
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: deps-{{ checksum "package.json" }}
+      - store_artifacts:
+          path: ./linkchecker.out
+          destination: linkchecker.out
+
+  markdownlint:
+    executor: ruby_executor
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            gem install mdl
+      - run:
+          shell: /bin/bash #this is a non breaking command so it will always return success
+          name: Run Markdownlint info checks
+          command: |
+            mdl --ignore-front-matter --style ./CI/markdownlint/info_style.rb . | tee ./markdownlint_info.out
+      - run:
+          name: Run Markdownlint
+          command: |
+            mdl --ignore-front-matter --style ./CI/markdownlint/style.rb . | tee ./markdownlint.out
+      - store_artifacts:
+          path: ./markdownlint.out
+          destination: ./markdownlint.out
+      - store_artifacts:
+          path: ./markdownlint_info.out
+          destination: ./markdownlint_info.out
+
+workflows:
+  version: 2
+  default:
+    jobs:
+      - spdx
+      - build
+      - vale
+      - markdownlint
+      - linkchecker
+  nightly:
+    triggers:
+      - schedule: # GMT
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - linkchecker
