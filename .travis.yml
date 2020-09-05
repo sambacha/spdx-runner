@@ -1,10 +1,10 @@
+os: linux
+dist: xenial
 
-matrix:
-  include:
-    - language: nodejs
-       before_script:
-        - npm install -g eclint
-        - eclint fix *
+language: bash
 
-    - language: bash
-      script: make
+before-install: chmod +x .series-ci.sh && chmod +x tests/bash_unit.sh
+
+install: sudo apt-get update -y -qq && mkdir -p ci-tests && . ./tests/bash_unit.sh
+
+script: . ./series-ci.sh
