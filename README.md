@@ -8,7 +8,18 @@
 -   license header, `license_header`
 -   test files, `*.js, *.java, etc`
 
-Check file extensions have the allowed/acceptable SPDX headers for them.
+## Formats
+
+```
+C source: // SPDX-License-Identifier: <SPDX License Expression>
+C header: /* SPDX-License-Identifier: <SPDX License Expression> */
+ASM:      /* SPDX-License-Identifier: <SPDX License Expression> */
+scripts:  # SPDX-License-Identifier: <SPDX License Expression>
+.rst:     .. SPDX-License-Identifier: <SPDX License Expression>
+.dts{i}:  // SPDX-License-Identifier: <SPDX License Expression>
+```
+
+## Usage
 
 ## Usage 
   
