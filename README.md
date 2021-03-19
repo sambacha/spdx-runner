@@ -2,6 +2,8 @@
 
 > CLI/CI Software License check
 
+[![Code Style: Black](https://github.com/sambacha/spdx-runner/actions/workflows/black.yml/badge.svg?branch=master)](https://github.com/sambacha/spdx-runner/actions/workflows/black.yml)
+
 ## Overview
 
 Verifies that files include SPDX license headers
