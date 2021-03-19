@@ -1,4 +1,4 @@
-# SPDX Runner 
+# SPDX Runner
 
 > CLI/CI Software License check
 
@@ -17,12 +17,13 @@ scripts:  # SPDX-License-Identifier: <SPDX License Expression>
 .dts{i}:  // SPDX-License-Identifier: <SPDX License Expression>
 ```
 
-## Usage 
-  
+## Usage
+
 Provide a dictionary, with file types as the keys and a list of accepted licenses as the values.
 
 ### Example
-```python 
+
+```python
       {
         "sol": ["MIT", "BSD-3"],
         "py": ["ISC"]
