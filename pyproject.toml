@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "SPDX-Runner"
+version = "1.0.0"
+description = "SPDX License CI/Runner"
+authors = ["sam <sam@freighttrust.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
