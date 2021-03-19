@@ -4,11 +4,9 @@
 
 ## Overview
 
--   bash script, `spdx.sh`
--   license header, `license_header`
--   test files, `*.js, *.java, etc`
+Verifies that files include SPDX license headers
 
-## Formats
+Check file extensions have the allowed/acceptable SPDX headers for them.
 
 ```
 C source: // SPDX-License-Identifier: <SPDX License Expression>
@@ -19,25 +17,17 @@ scripts:  # SPDX-License-Identifier: <SPDX License Expression>
 .dts{i}:  // SPDX-License-Identifier: <SPDX License Expression>
 ```
 
-## Usage
-
 ## Usage 
   
 Provide a dictionary, with file types as the keys and a list of accepted licenses as the values.
 
 ### Example
-
-`// SPDX-License-Identifier: ISC`
-
-## `spdx-sol.sh`
-
--   searches for 'codeclimate.yml' - this is for disallowed licenses
-
--   can delete this or replace with something else
-
--   you can change the files to search for on line 22
--   you can change the dir's to search for on line 21
--   if you want to output to terminal without saving to file, remove -n and the \* > output.txt
+```python 
+      {
+        "sol": ["MIT", "BSD-3"],
+        "py": ["ISC"]
+      }
+```
 
 ### License Header Examples
 
